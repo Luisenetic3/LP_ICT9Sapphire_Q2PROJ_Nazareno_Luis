@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steamed Pork Buns</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton+SC&display=swap" rel="stylesheet">
+</head>
+
+<style>
+    body {
+        background-image: url("images/food\ bg.png");
+        margin: 0;
+    }
+
+    .anton-sc-regular {
+        font-family: "Anton SC", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    /* Navbar fix */
+    nav.navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+    }
+
+    body {
+        padding-top: 56px; /* Reduced navbar size padding */
+        background-color: #f8f9fa;
+    }
+
+    /* Recipe Box Section */
+    .recipe-box {
+        display: flex;
+        justify-content: space-between;
+        background-color: #3d3d3d;
+        border: 2px solid #ddd;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        width: 80%;
+        margin: 50px auto;
+        overflow: hidden;
+        color: white;
+        min-height: 350px; /* Set a minimum height but allow for expansion */
+    }
+
+    /* Adjusted image dimensions */
+    .recipe-box img {
+        width: 30%;  /* Set width for the image */
+        height: 30%; /* Set height to auto for aspect ratio */
+        object-fit: cover;
+        border-radius: 8px;
+        margin: 5px;
+    }
+
+    .recipe-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 10px;
+        width: 70%;
+    }
+
+    /* Styling for ingredients box */
+    .ingredients {
+        margin-top: 10px;
+        background-color: #f0f0f0; /* Light gray background */
+        padding: 15px;
+        border-radius: 8px;
+        color: black;
+    }
+
+    .ingredients h5 {
+        font-weight: bold;
+        color: #333;
+    }
+
+    /* Styling for steps box */
+    .steps {
+        margin-top: 10px;
+        background-color: #e9ecef; /* Light blue-gray background */
+        padding: 15px;
+        border-radius: 8px;
+        color: black;
+    }
+
+    .steps h5 {
+        font-weight: bold;
+        color: #333;
+    }
+
+    .view-link {
+        display: inline-block;
+        margin-top: 10px;
+        padding: 10px;
+        background-color: #007bff;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+    }
+
+    .view-link:hover {
+        background-color: #0056b3;
+    }
+</style>
+
+<body>
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+        <div class="container-fluid">
+            <div class="container">
+                <div class="collapse navbar-collapse justify-content-center">
+                    <a class="navbar-brand" href="#">
+                        <img src="images/The perfect chinese recipe sitect.png" alt="" height="52px">
+                    </a>
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item"><a class="nav-link text-secondary" href="index.html" target="_self" style="font-size:20px;">Home</a></li>
+                        <li class="nav-item"><a class="nav-link text-secondary" href="Categories.html" target="_self" style="font-size:20px;">Categories</a></li>
+                        <li class="nav-item"><a class="nav-link text-secondary" href="About.html" target="_self" style="font-size:20px;">About</a></li>
+                        <li class="nav-item"><a class="nav-link text-secondary" href="SubmityourRECIPE.html" target="_self" style="font-size:20px;">Submit a Recipe</a></li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control" type="text" placeholder="Search recipes">
+                        <button class="btn btn-success" type="button">Search</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Recipe Box Section (Single Recipe List) -->
+    <div class="recipe-box">
+        <!-- Recipe Image -->
+        <img src="images/Steamed Pork Buns.png" alt="Recipe Image">
+        
+        <!-- Recipe Content -->
+        <div class="recipe-content">
+            <h4>Steamed Pork Buns</h4>
+            
+            <!-- Ingredients -->
+            <div class="ingredients">
+                <h5>Ingredients:</h5>
+                <ul>
+                    <li>1 tsp active dry yeast powder</li>
+                    <li>¼ cup / 65 ml warm water</li>
+                    <li>1 tbsp white sugar</li>
+                    <li>½ cup /125 ml warm water</li>
+                    <li>4 tbsp /70g white sugar</li>
+                    <li>2 cups / 300g plain flour ((all purpose))</li> 
+                    <li>1 cup / 155g cornflour / cornstarch</li>
+                    <li>¼ cup / 65 ml vegetable oil</li> 
+                    <li>2 ½ tsp baking powder</li>
+                    <li>1 tbsp vegetable oil</li>
+                    <li>⅓ cup finely chopped escalot or white onion ((Note 1))</li>
+                    <li>1 tbsp sugar</li>
+                    <li>1 ½ tbsp soy sauce (, regular or light (not dark))</li>
+                    <li>1 ½ tbsp oyster sauce ((can sub Hoisin))</li>  
+                    <li>1 tbsp sesame oil</li>
+                    <li>½ cup water</li>  
+                    <li>1 tbsp cornflour dissolved in 1 tbsp water</li>
+                    <li>1 ½ cups Chinese Barbecue Pork (, diced (Note 2))</li>
+                </ul>
+            </div>
+            
+            <!-- Step-by-Step Recipe -->
+            <div class="steps">
+                <h5>Step-by-Step Recipe:</h5>
+                <ol>
+                    <li>Yeast Activation: Place yeast, sugar and water in a small bowl. Mix, then set aside for 10 minutes until it becomes foamy.</li>
+                    <li>Place flour, cornflour and sugar in a stand mixer bowl fitted with a dough hook. Mix briefly to combine.</li>
+                    <li>Add yeast mixture, oil and water. Mix on low speed for 3 minutes until a smooth ball of dough forms. It should be soft and elastic, not so sticky it gets stuck all over your hands. Adjust with a touch of flour/water if required to get the dough consistency right.</li>
+                    <li>Cover with cling wrap and place in a warm dry place for 2 hours until it doubles in volume. (Note 3). Meanwhile, make Filling.</li>
+                    <li>Remove cling wrap, scatter over baking powder. Return to stand mixer and mix on low for 2 minutes.</li>
+                    <li>Turn dough out onto work surface, sprinkle with flour. Knead lightly to form a smooth round disc.</li>
+                    <li>Cut dough into 4 pieces. Take one piece, roll into an even log, cut into 3 pieces (so 12 pieces in total).</li>
+                    <li>Take one piece of dough, cover remaining with cling wrap or tea towel.</li>
+                    <li>Roll into round 4.5" / 11 cm in diameter, making the edges thinner.</li>
+                    <li>Place dough in hand, put 1 ½ tbsp of Filling in the centre.</li>
+                    <li>Pinch 8 pleats around the edges. Then gather the pleats together one by one to seal the bun. Pinch the top the twist.</li>
+                    <li>Repeat with remaining dough - make 12 in total.</li>
+                    <li>Cover buns loosely with cling wrap and leave in a warm place for 15 minutes.</li>
+                    <li>Line a large bamboo steamer (or other steamer) with parchment paper punctured with holes (Note 4).</li>
+                    <li>Place 6 to 8 buns on paper, cover with steamer lid.</li>
+                    <li>Pour about 4 cm / 1 ½ inches in a wok / pot (steamer should not touch water) and bring to rapid simmer over medium high.</li>
+                    <li>Place steamer in wok, then cook for 12 minutes. Check water halfway through, top up if required.</li>
+                    <li>Buns are ready when they spring back when touched, and the buns have formed a smooth skin.</li>
+                    <li>Remove steamer from wok, serve warm!</li>
+                    <li>Heat oil in a saucepan over medium heat. Add eschalots and cook for 2 minutes.</li>
+                    <li>Add sugar, soy sauce, oyster sauce, sesame oil and water. Mix.</li>
+                    <li>While stirring, slowly pour cornflour mixture in. Mix until smooth.</li>
+                    <li>Stir in pork. Cook until sauce is thickened, 1 - 1 ½ minutes (see video for consistency). Set aside to cool (thickens when cools).</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

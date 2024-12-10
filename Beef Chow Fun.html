@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beef Chow Fun</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton+SC&display=swap" rel="stylesheet">
+</head>
+
+<style>
+    body {
+        background-image: url("images/food\ bg.png");
+        margin: 0;
+    }
+
+    .anton-sc-regular {
+        font-family: "Anton SC", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    /* Navbar fix */
+    nav.navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+    }
+
+    body {
+        padding-top: 56px; /* Reduced navbar size padding */
+        background-color: #f8f9fa;
+    }
+
+    /* Recipe Box Section */
+    .recipe-box {
+        display: flex;
+        justify-content: space-between;
+        background-color: #3d3d3d;
+        border: 2px solid #ddd;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        width: 80%;
+        margin: 50px auto;
+        overflow: hidden;
+        color: white;
+        min-height: 350px; /* Set a minimum height but allow for expansion */
+    }
+
+    /* Adjusted image dimensions */
+    .recipe-box img {
+        width: 30%;  /* Set width for the image */
+        height: 30%; /* Set height to auto for aspect ratio */
+        object-fit: cover;
+        border-radius: 8px;
+        margin: 5px;
+    }
+
+    .recipe-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 10px;
+        width: 70%;
+    }
+
+    /* Styling for ingredients box */
+    .ingredients {
+        margin-top: 10px;
+        background-color: #f0f0f0; /* Light gray background */
+        padding: 15px;
+        border-radius: 8px;
+        color: black;
+    }
+
+    .ingredients h5 {
+        font-weight: bold;
+        color: #333;
+    }
+
+    /* Styling for steps box */
+    .steps {
+        margin-top: 10px;
+        background-color: #e9ecef; /* Light blue-gray background */
+        padding: 15px;
+        border-radius: 8px;
+        color: black;
+    }
+
+    .steps h5 {
+        font-weight: bold;
+        color: #333;
+    }
+
+    .view-link {
+        display: inline-block;
+        margin-top: 10px;
+        padding: 10px;
+        background-color: #007bff;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+    }
+
+    .view-link:hover {
+        background-color: #0056b3;
+    }
+</style>
+
+<body>
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+        <div class="container-fluid">
+            <div class="container">
+                <div class="collapse navbar-collapse justify-content-center">
+                    <a class="navbar-brand" href="#">
+                        <img src="images/The perfect chinese recipe sitect.png" alt="" height="52px">
+                    </a>
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item"><a class="nav-link text-secondary" href="index.html" target="_self" style="font-size:20px;">Home</a></li>
+                        <li class="nav-item"><a class="nav-link text-secondary" href="Categories.html" target="_self" style="font-size:20px;">Categories</a></li>
+                        <li class="nav-item"><a class="nav-link text-secondary" href="About.html" target="_self" style="font-size:20px;">About</a></li>
+                        <li class="nav-item"><a class="nav-link text-secondary" href="SubmityourRECIPE.html" target="_self" style="font-size:20px;">Submit a Recipe</a></li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control" type="text" placeholder="Search recipes">
+                        <button class="btn btn-success" type="button">Search</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Recipe Box Section (Single Recipe List) -->
+    <div class="recipe-box">
+        <!-- Recipe Image -->
+        <img src="images/Beef-chow-fun-by-Red-House-Spice-0.jpg" alt="Recipe Image">
+        
+        <!-- Recipe Content -->
+        <div class="recipe-content">
+            <h4>Beef Chow Fun</h4>
+            
+            <!-- Ingredients -->
+            <div class="ingredients">
+                <h5>Ingredients:</h5>
+                <ul>
+                    <li>140 g beef, preferably flank/skirt steak (5oz)</li>
+                    <li>1 teaspoon light soy sauce</li>
+                    <li>1 teaspoon Shaoxing rice wine</li>
+                    <li>1 teaspoon cornstarch</li>
+                    <li>1 tablespoon water</li>
+                    <li>1 pinch sugar</li>
+                    <li>1 teaspoon cooking oil</li>
+                    <li>450 g sa-ho fun (16oz, see note 1)</li>
+                    <li>2 tablespoon cooking oil</li>
+                    <li>60 g beansprouts (2oz )</li>
+                    <li>¼ onion, thinly sliced</li>
+                    <li>30 g Chinese chives (1oz, see note 2)</li>
+                    <li>1 tablespoon dark soy sauce</li>
+                    <li>1 tablespoon light soy sauce</li>
+                </ul>
+            </div>
+            
+            <!-- Step-by-Step Recipe -->
+            <div class="steps">
+                <h5>Step-by-Step Recipe:</h5>
+                <ol>
+                    <li>Slice the beef against the grain. Mix with light soy sauce, rice wine, cornstarch, water and sugar. Coat with oil then leave to rest for 15 minutes.</li>
+                    <li>If using fresh ones: Gently separate the sa-ho fun by hand into long strands (try not to break them into small pieces).</li>
+                    <li>If using dried ones: follow the instructions on the package to cook then rinse under cold water prior to stir-frying.</li>
+                    <li>Pour oil into a hot wok. Stir in the marinated beef slices. Fry until they just turn pale (do not overcook). Dish out and leave the oil in the wok.</li>
+                    <li>Put in sa-ho fun. Gently stir around with a pair of chopsticks. When the sa-ho fun begins to wilt, add in beansprouts and onion. Fry for 30 seconds or so.</li>
+                    <li>Add the beef and Chinese chives. Pour in light soy sauce and dark soy sauce. Cook for a further 30 seconds.</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
